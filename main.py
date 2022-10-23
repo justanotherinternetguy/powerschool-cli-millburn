@@ -6,7 +6,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 
-# exec(open("./init.py").read())
+exec(open("./init.py").read())
 
 load_dotenv()
 USERNAME = os.getenv("usr")
@@ -28,7 +28,6 @@ def scrape(url):
     classes = soup.find_all("a")
     print(soup)
     print(url)
-    
 
 
 if __name__ == "__main__":
